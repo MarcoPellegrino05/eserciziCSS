@@ -1,0 +1,82 @@
+<SCRIPT Language='JavaScript'>
+
+    function inizia()
+    {
+       var b=document.getElementById('B');
+    
+       setInterval(function () {
+          y=parseInt(b.offsetLeft);
+          y=y+20;
+          b.style.left=y;
+          x=parseInt(b.offsetTop);
+          x=x+10;
+          b.style.top=x;
+       }, 500);
+         
+       var b=document.getElementById('A');
+
+       setInterval(function () {
+          y=parseInt(a.offsetLeft);
+          y=y+20;
+          a.style.left=y;
+          x=parseInt(a.offsetTop);
+          x=x+10;
+          a.style.top=x;
+       }, 500);
+
+    }
+    
+    
+    </SCRIPT>
+    
+    
+    <HTML>
+       <HEAD>
+       <TITLE>test0</TITLE>
+       </HEAD>
+    
+       <style type="text/css">
+         
+          #B
+          {
+             left:210px;
+             top:50px;
+                       
+             background-color:rgb(0, 9, 128);
+             color:black;
+             position:absolute;
+             height:100px;
+             width:100px;
+             text-align:center;
+             font-size:20px; 
+             border-width:1px;
+             border:solid black;
+          }
+          #A
+          {
+             left:210px;
+             top:50px;
+             background-color: rgb(255, 230, 0);
+             color:black;
+             position:absolute;
+             height:100px;
+             width:100px;
+             text-align:center;
+             font-size:20px; 
+             border-width:1px;
+             border:solid black
+
+        
+          }
+    
+       </style>
+    
+    
+        <BODY onLoad="inizia()">
+    
+        <DIV id='B'></DIV>
+        <DIV id='A'></DIV>
+    
+       </BODY>
+    
+    </HTML>
